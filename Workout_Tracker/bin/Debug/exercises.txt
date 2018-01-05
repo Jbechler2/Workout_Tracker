@@ -1,0 +1,10 @@
+0 pull_up
+1 bench_press
+
+2 core_twists
+
+3 russian_deadlift
+
+4 squat
+
+5 dumbbell_curls
