@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 using System.IO;
 
 
@@ -30,6 +31,7 @@ namespace Workout_Tracker
         public MainWindow()
         {
             InitializeComponent();
+            get_exercises();
             date_picker.SelectedDate = DateTime.Today;
         }
 
@@ -50,6 +52,82 @@ namespace Workout_Tracker
             reps3.Text = "";
             cb4.SelectedIndex = -1;
             reps4.Text = "";
+        }
+
+        private void get_exercises()
+        {
+            List<string> names = new List<string>();
+            names = get_exercise_names();
+
+            cb1.Items.Clear();
+            for(int i = 0; i < names.Count; i++)
+            {
+                cb1.Items.Add(namify(names[i]));
+            }
+
+
+        }
+
+        private string namify(string name)
+        {
+            string new_name = "";
+
+            dynamic words;
+
+            new_name = name.Replace("_", " ");
+
+            words = new_name.Split(' ');
+
+            for(int i = 0; i < words.Length; i++)
+            {
+                if (words[i] != "")
+                {
+                    words[i] = char.ToUpper(words[i][0]) +  words[i].Substring(1).ToLower();
+                }
+            }
+            if (words.Length == 1)
+                return words[0];
+            else
+            {
+                return String.Join(" ", words);
+            }
+        }
+
+
+
+        private List<string> get_exercise_names()
+        {
+            StreamReader file = new StreamReader("exercises.txt", true);
+            List<string> names = new List<string>();
+            string line = null;
+            string name;
+            while((line = file.ReadLine()) != null)
+            {
+                if((name = parse_names(line)) != null)
+                    names.Add(name);
+            }
+
+            file.Close();
+
+            return names;
+        }
+
+        private string parse_names(string line)
+        {
+            Regex name = new Regex(@"\s+[a-z_]*");
+
+            var result = name.Match(line);
+
+            int x;
+
+            if (result.Success)
+            {
+                return result.Value;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         private void cb1_SelectionChanged(object sender, SelectionChangedEventArgs e)

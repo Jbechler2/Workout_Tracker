@@ -8,3 +8,5 @@
 4 squat
 
 5 dumbbell_curls
+
+6 push_up

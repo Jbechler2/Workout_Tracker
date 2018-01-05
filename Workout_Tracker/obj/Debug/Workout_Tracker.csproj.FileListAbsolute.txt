@@ -50,3 +50,22 @@ C:\Users\Elaine Zabriskie\Dropbox\C# Projects\Workout_Tracker\Workout_Tracker\ob
 C:\Users\Elaine Zabriskie\Dropbox\C# Projects\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.csproj.CoreCompileInputs.cache
 C:\Users\Elaine Zabriskie\Dropbox\C# Projects\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.exe
 C:\Users\Elaine Zabriskie\Dropbox\C# Projects\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.pdb
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\bin\Debug\Workout_Tracker.exe.config
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\bin\Debug\Workout_Tracker.exe
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\bin\Debug\Workout_Tracker.pdb
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.csprojResolveAssemblyReference.cache
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\home.g.cs
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\MainWindow.g.cs
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\new_workout.g.cs
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\App.g.cs
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker_MarkupCompile.cache
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker_MarkupCompile.lref
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\home.baml
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\MainWindow.baml
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\new_workout.baml
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.g.resources
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.Properties.Resources.resources
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.csproj.GenerateResource.Cache
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.csproj.CoreCompileInputs.cache
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.exe
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.pdb
