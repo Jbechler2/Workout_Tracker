@@ -69,3 +69,5 @@ C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\ob
 C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.csproj.CoreCompileInputs.cache
 C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.exe
 C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\Workout_Tracker.pdb
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\update_personal.g.cs
+C:\Users\Elaine Zabriskie\Documents\git_repos\Workout_Tracker\Workout_Tracker\obj\Debug\update_personal.baml

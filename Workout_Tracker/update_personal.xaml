@@ -1,0 +1,23 @@
+﻿<Window x:Class="Workout_Tracker.update_personal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workout_Tracker"
+        mc:Ignorable="d"
+        Title="update_personal" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="28,27,0,0" TextWrapping="Wrap" Text="Body Weight:" VerticalAlignment="Top"/>
+        <TextBox x:Name="bw" HorizontalAlignment="Left" Height="23" Margin="132,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" TextChanged="bw_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,30,0,0" TextWrapping="Wrap" Text="lbs" VerticalAlignment="Top"/>
+        <TextBlock x:Name="bw_warning" HorizontalAlignment="Left" Margin="127,51,0,0" TextWrapping="Wrap" Text="Only Numbers Allowed" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" Visibility="Hidden"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,77,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top"/>
+        <TextBox x:Name="ft" HorizontalAlignment="Left" Height="23" Margin="132,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" TextChanged="ft_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="171,80,0,0" TextWrapping="Wrap" Text="ft" VerticalAlignment="Top"/>
+        <TextBox x:Name="inches" HorizontalAlignment="Left" Height="23" Margin="190,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" TextChanged="inches_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,80,0,0" TextWrapping="Wrap" Text="in" VerticalAlignment="Top"/>
+        <TextBlock x:Name="height_warning" HorizontalAlignment="Left" Margin="124,104,0,0" TextWrapping="Wrap" Text="Only Numbers Allowed" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" Visibility="Hidden"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="34,234,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="177,234,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+    </Grid>
+</Window>

@@ -39,19 +39,23 @@ namespace Workout_Tracker
         {
             StreamWriter wo = new StreamWriter("workout1.txt", true);
             wo.WriteLine(date_picker.SelectedDate + "\n");
-            wo.WriteLine(cb1.SelectedIndex.ToString() + "," + reps1.Text.ToString() + "," + weight1.Text + "\n");
-            wo.WriteLine(cb2.SelectedIndex.ToString() + "," + reps2.Text.ToString() + "," + weight2.Text + "\n");
-            wo.WriteLine(cb3.SelectedIndex.ToString() + "," + reps3.Text.ToString() + "," + weight3.Text + "\n");
-            wo.WriteLine(cb4.SelectedIndex.ToString() + "," + reps4.Text.ToString() + "," + weight4.Text + "\n");
+            wo.WriteLine(cb1.SelectedIndex.ToString() + "," + sets1.Text + "," + reps1.Text + "," + weight1.Text + "\n");
+            wo.WriteLine(cb2.SelectedIndex.ToString() + "," + sets2.Text + "," + reps2.Text + "," + weight2.Text + "\n");
+            wo.WriteLine(cb3.SelectedIndex.ToString() + "," + sets3.Text + "," + reps3.Text + "," + weight3.Text + "\n");
+            wo.WriteLine(cb4.SelectedIndex.ToString() + "," + sets1.Text + "," + reps4.Text + "," + weight4.Text + "\n");
             wo.Close();
             cb1.SelectedIndex = -1;
             reps1.Text = "";
+            sets1.Text = "";
             cb2.SelectedIndex = -1;
             reps2.Text = "";
+            sets2.Text = "";
             cb3.SelectedIndex = -1;
             reps3.Text = "";
+            sets3.Text = "";
             cb4.SelectedIndex = -1;
             reps4.Text = "";
+            sets4.Text = "";
         }
 
         private void get_exercises()
@@ -59,10 +63,20 @@ namespace Workout_Tracker
             List<string> names = new List<string>();
             names = get_exercise_names();
 
+            string name;
             cb1.Items.Clear();
+            cb2.Items.Clear();
+            cb3.Items.Clear();
+            cb4.Items.Clear();
+
             for(int i = 0; i < names.Count; i++)
             {
-                cb1.Items.Add(namify(names[i]));
+                name = namify(names[i]);
+
+                cb1.Items.Add(name);
+                cb2.Items.Add(name);
+                cb3.Items.Add(name);
+                cb4.Items.Add(name);
             }
 
 
@@ -117,8 +131,6 @@ namespace Workout_Tracker
             Regex name = new Regex(@"\s+[a-z_]*");
 
             var result = name.Match(line);
-
-            int x;
 
             if (result.Success)
             {
@@ -231,6 +243,17 @@ namespace Workout_Tracker
             new_workout x = new new_workout(this);
             this.Hide();
             x.Show();   
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            update_personal new_info = new update_personal();
+            new_info.Show();
         }
     }
 }

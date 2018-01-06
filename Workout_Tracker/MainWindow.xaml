@@ -7,45 +7,41 @@
         xmlns:local="clr-namespace:Workout_Tracker"
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="1500" WindowStartupLocation="CenterScreen" WindowState="Maximized">
-    <Grid x:Name="g" Margin="1,0,-1,0">
-        <ComboBox x:Name="cb1" HorizontalAlignment="Left" Margin="19,280,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb1_SelectionChanged"></ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="19,259,0,0" TextWrapping="Wrap" Text="Select a Workout:" VerticalAlignment="Top"/>
-        <TextBox x:Name="reps1" HorizontalAlignment="Left" Height="23" Margin="179,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
-        <TextBlock HorizontalAlignment="Left" Margin="170,262,0,0" TextWrapping="Wrap" Text="# of reps" VerticalAlignment="Top"/>
-        <Button Content="Log Workout" HorizontalAlignment="Left" Margin="348,738,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
-        <TextBox x:Name="weight1" HorizontalAlignment="Left" Height="23" Margin="264,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29
-                 "/>
-        <TextBlock HorizontalAlignment="Left" Margin="262,262,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top"/>
-        <TextBox x:Name="bw" HorizontalAlignment="Left" Height="23" Margin="160,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
-        <TextBlock HorizontalAlignment="Left" Margin="19,34,0,0" TextWrapping="Wrap" Text="Enter your bodyweight:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="213,37,0,0" TextWrapping="Wrap" Text="lbs" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cb2" HorizontalAlignment="Left" Margin="19,330,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb2_SelectionChanged">
-            <ComboBoxItem x:Name="pull_up1" Content="Pull-up"/>
-            <ComboBoxItem x:Name="core_twist1" Content="Core Twist"/>
-            <ComboBoxItem x:Name="bench_press1" Content="Bench Press"/>
-            <ComboBoxItem x:Name="db_curl1" Content="Dumbell Curl"/>
-        </ComboBox>
-        <TextBox x:Name="reps2" HorizontalAlignment="Left" Height="23" Margin="179,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
-        <TextBox x:Name="weight2" HorizontalAlignment="Left" Height="23" Margin="264,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29                  "/>
-        <ComboBox x:Name="cb3" HorizontalAlignment="Left" Margin="19,380,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb3_SelectionChanged">
-            <ComboBoxItem x:Name="pull_up2" Content="Pull-up"/>
-            <ComboBoxItem x:Name="core_twist2" Content="Core Twist"/>
-            <ComboBoxItem x:Name="bench_press2" Content="Bench Press"/>
-            <ComboBoxItem x:Name="db_curl2" Content="Dumbell Curl"/>
-        </ComboBox>
-        <TextBox x:Name="reps3" HorizontalAlignment="Left" Height="23" Margin="179,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
-        <TextBox x:Name="weight3" HorizontalAlignment="Left" Height="23" Margin="264,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29                  "/>
-        <ComboBox x:Name="cb4" HorizontalAlignment="Left" Margin="19,430,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb4_SelectionChanged">
-            <ComboBoxItem x:Name="pull_up3" Content="Pull-up"/>
-            <ComboBoxItem x:Name="core_twist3" Content="Core Twist"/>
-            <ComboBoxItem x:Name="bench_press3" Content="Bench Press"/>
-            <ComboBoxItem x:Name="db_curl3" Content="Dumbell Curl"/>
-        </ComboBox>
-        <TextBox x:Name="reps4" HorizontalAlignment="Left" Height="23" Margin="179,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
-        <TextBox x:Name="weight4" HorizontalAlignment="Left" Height="23" Margin="264,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29                  "/>
+    <Grid x:Name="g" Margin="1,0,-1.4,0.4">
+        <TextBlock HorizontalAlignment="Left" Margin="32,35,0,0" TextWrapping="Wrap" Text="Body Weight:" VerticalAlignment="Top"/>
+        <TextBox x:Name="bw" HorizontalAlignment="Left" Height="23" Margin="114,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="167,33,0,0" TextWrapping="Wrap" Text="lbs" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,65,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="139,67,0,0" TextWrapping="Wrap" Text="ft" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="163,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="188,69,0,0" TextWrapping="Wrap" Text="in" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,261,0,0" TextWrapping="Wrap" Text="Select a Workout:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,262,0,0" TextWrapping="Wrap" Text="# of reps" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="342,262,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb1" HorizontalAlignment="Left" Margin="19,280,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb1_SelectionChanged"/>
+        <TextBox x:Name="sets1" HorizontalAlignment="Left" Height="23" Margin="179,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="reps1" HorizontalAlignment="Left" Height="23" Margin="257,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="weight1" HorizontalAlignment="Left" Height="23" Margin="344,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <ComboBox x:Name="cb2" HorizontalAlignment="Left" Margin="19,330,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb2_SelectionChanged"/>
+        <TextBox x:Name="sets2" HorizontalAlignment="Left" Height="23" Margin="179,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="reps2" HorizontalAlignment="Left" Height="23" Margin="257,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="weight2" HorizontalAlignment="Left" Height="23" Margin="344,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <ComboBox x:Name="cb3" HorizontalAlignment="Left" Margin="19,380,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb3_SelectionChanged"/>
+        <TextBox x:Name="sets3" HorizontalAlignment="Left" Height="23" Margin="179,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="reps3" HorizontalAlignment="Left" Height="23" Margin="257,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="weight3" HorizontalAlignment="Left" Height="23" Margin="344,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <ComboBox x:Name="cb4" HorizontalAlignment="Left" Margin="19,430,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb4_SelectionChanged"/>
+        <TextBox x:Name="sets4" HorizontalAlignment="Left" Height="23" Margin="179,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="reps4" HorizontalAlignment="Left" Height="23" Margin="257,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="weight4" HorizontalAlignment="Left" Height="23" Margin="344,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29"/>
+        <Button x:Name="add_wo" Content="+" HorizontalAlignment="Left" Height="42" Margin="136,467,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click_1"/>
         <DatePicker x:Name="date_picker" HorizontalAlignment="Left" Margin="336,710,0,0" VerticalAlignment="Top"/>
+        <Button Content="Log Workout" HorizontalAlignment="Left" Margin="348,738,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
         <Button Content="Read Recent Workouts" HorizontalAlignment="Left" Margin="1092,112,0,0" VerticalAlignment="Top" Width="146" Height="44"/>
-        <Button x:Name="add_wo" Content="+" HorizontalAlignment="Left" Height="42" Margin="136,464,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click_1"/>
         <Button Content="Add New Exercise" HorizontalAlignment="Left" Margin="1338,33,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_2" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="181,262,0,0" TextWrapping="Wrap" Text="Sets" VerticalAlignment="Top"/>
+        <Button Content="Update Personal Info" HorizontalAlignment="Left" Margin="1338,65,0,0" VerticalAlignment="Top" Width="117" Height="21" Click="Button_Click_3"/>
+
     </Grid>
 </Window>
