@@ -31,8 +31,27 @@ namespace Workout_Tracker
         public MainWindow()
         {
             InitializeComponent();
+            get_p_info();
             get_exercises();
             date_picker.SelectedDate = DateTime.Today;
+        }
+
+        private void get_p_info()
+        {
+            StreamReader p_info = new StreamReader("p_info.txt");
+
+            string temp;
+
+            temp = p_info.ReadLine();
+
+            bw.Text = Int32.Parse(temp.Substring(3)).ToString();
+
+            temp = p_info.ReadLine();
+
+            ft.Text = (Int32.Parse(temp.Substring(7)) / 12).ToString();
+            inches.Text = (Int32.Parse(temp.Substring(7)) % 12).ToString();
+
+            p_info.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -253,7 +272,13 @@ namespace Workout_Tracker
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             update_personal new_info = new update_personal();
+            new_info.Closed += temp;
             new_info.Show();
+        }
+
+        private void temp(object sender, System.EventArgs e)
+        {
+            get_p_info();
         }
     }
 }

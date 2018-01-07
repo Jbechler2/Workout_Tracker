@@ -12,9 +12,9 @@
         <TextBox x:Name="bw" HorizontalAlignment="Left" Height="23" Margin="114,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="167,33,0,0" TextWrapping="Wrap" Text="lbs" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,65,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="114,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="ft" HorizontalAlignment="Left" Height="23" Margin="114,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="139,67,0,0" TextWrapping="Wrap" Text="ft" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="163,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="inches" HorizontalAlignment="Left" Height="23" Margin="163,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="188,69,0,0" TextWrapping="Wrap" Text="in" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,261,0,0" TextWrapping="Wrap" Text="Select a Workout:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="248,262,0,0" TextWrapping="Wrap" Text="# of reps" VerticalAlignment="Top"/>

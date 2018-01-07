@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Workout_Tracker
 {
@@ -38,8 +39,28 @@ namespace Workout_Tracker
         {
             if(check_bw() && check_height())
             {
+                log_info();
+                MainWindow main = new MainWindow();
                 this.Close();
             }
+        }
+
+        private void log_info()
+        {
+            StreamWriter p_info = new StreamWriter("p_info.txt");
+
+            int weight = 0;
+            int height = 0;
+
+            weight = Int32.Parse(bw.Text);
+
+            height = (Int32.Parse(ft.Text) * 12) + Int32.Parse(inches.Text);
+
+            p_info.WriteLine("bw:" + weight.ToString());
+            p_info.WriteLine("height:" + height.ToString());
+
+            p_info.Close();
+
         }
 
         private bool check_bw()
