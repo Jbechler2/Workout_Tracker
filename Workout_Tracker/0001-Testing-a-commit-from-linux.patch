@@ -1,0 +1,25 @@
+From 992e4643c56505564f00bc22f9dab6047827eb99 Mon Sep 17 00:00:00 2001
+From: Jacob Bechler <Jbechler2@gmail.com>
+Date: Sun, 2 Aug 2020 15:56:47 -0600
+Subject: [PATCH] Testing a commit from linux.
+
+Signed-off-by: Jacob Bechler <Jbechler2@gmail.com>
+---
+ Workout_Tracker/new_workout.xaml.cs | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Workout_Tracker/new_workout.xaml.cs b/Workout_Tracker/new_workout.xaml.cs
+index dcd965b..193dd4a 100644
+--- a/Workout_Tracker/new_workout.xaml.cs
++++ b/Workout_Tracker/new_workout.xaml.cs
+@@ -14,6 +14,7 @@ using System.Windows.Shapes;
+ using System.IO;
+ using System.Text.RegularExpressions;
+ 
++///Testing git
+ 
+ namespace Workout_Tracker
+ {
+-- 
+2.17.1
+
